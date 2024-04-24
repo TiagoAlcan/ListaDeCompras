@@ -14,7 +14,7 @@ class MainActivity : ComponentActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView);
         val itemsAdapter = ItemsAdapter()
         recyclerView.adapter = itemsAdapter
-        
+
         val button = findViewById<Button>(R.id.button)
         val editText = findViewById<EditText>(R.id.editText)
 
