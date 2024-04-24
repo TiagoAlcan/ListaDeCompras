@@ -11,6 +11,11 @@ class ItemsAdapter :
 
     private val items = mutableListOf<ItemModel>()
 
+    fun addItem(newItem: ItemModel) {
+        items.add(newItem)
+        notifyDataSetChanged()
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemsAdapter.ItemViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_layout, parent, false)
         return ItemViewHolder(view)
